@@ -242,28 +242,7 @@ function displayCart() {
 }
 
 
-// let basket=[];
-// // let existing=parseInt(document.querySelector('.cart-value span').textContent);
-// let c=0;
-// let increment=(id)=>{
-//     let selectedItem=id;
-//     c++;
-//     let search=basket.find((x)=>x.id===selectedItem.id);
-//     if(search===undefined){
-//         basket.push({
-//             id:selectedItem.id,
-//             item:2,
-//         });
-//     }
-//     else{
-//         search.item+=1;
-//     }
-    
-//     // console.log(basket);
-//     update(selectedItem.id);
-//     localStorage.setItem("data",JSON.stringify(basket));
 
-// };
 
 
 let increment=(id)=>{
@@ -324,21 +303,6 @@ let decrement=(id)=>{
 
 
 
-// let decrement=(id)=>{
-//     let selectedItem=id;
-//     let search=basket.find((x)=>x.id===selectedItem.id);
-//     if(search===undefined)return;
-//     else if(search.item===0)return;
-//     else{
-//         search.item-=1;
-//     }
-//     update(selectedItem.id);
-//     basket=basket.filter((x)=>x.item!==0);
-//     // console.log(basket);
-    
-//     localStorage.setItem("data",JSON.stringify(basket));
-
-// };
 
 let update=(id)=>{
     // console.log(search.item);
@@ -354,12 +318,6 @@ let update=(id)=>{
     
 };
 
-// let update=(id)=>{
-//     let search=basket.find((x)=>x.id===id);
-//     // console.log(search.item);
-//     document.getElementById(id).innerHTML=search.item;
-//     calculation();
-// };
 
 
 let calculation=()=>{
@@ -370,20 +328,7 @@ let calculation=()=>{
 
 };
 
-// let calculation=()=>{
-//     let cartIcon=document.querySelector('.cart-value span');
 
-//     if(c===1){
-//         let cartItems=localStorage.getItem("productsInCart");
-//         cartItems=JSON.parse(cartItems);
-//         let existCart=Object.values(cartItems).map((x)=>x.inCart).reduce((x,y)=>x+y,0);
-//         cartIcon.innerHTML=existCart+basket.map((x)=>x.item).reduce((x,y)=>x+y,-1);
-//     }// console.log(basket.map((x)=>x.item).reduce((x,y)=>x+y,0));
-//     else{
-//         cartIcon.innerHTML=basket.map((x)=>x.item).reduce((x,y)=>x+y,0);
-
-//     }
-// };
 
 
 displayCart();
@@ -391,25 +336,7 @@ calculation();
 
 
 
-// function changeUnits(action,tag){
-//     let cartItems=localStorage.getItem("productsInCart");
-//     cartItems=cartItems.map(item => {
 
-//         let oldUnits=item.inCart;
-//         if(item.tag === tag){
-//             if(action ==="minus"){
-//                 oldUnits--;
-//             }
-//             else if(action==="plus"){
-//                 oldUnits++;
-//             }
-//         }
-//         return{
-//             ...item,
-//             inCart:oldUnits,
-//         };
-//     });
-// }
 
 function removeItem(id) {
     let cartItems=localStorage.getItem("productsInCart");
