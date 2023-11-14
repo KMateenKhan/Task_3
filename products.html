@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>AllProducts - ZB-Store</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+
+    </head>
+    <body>
+        
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="185px"></a>
+
+            </div>
+            <nav> 
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li class="cart-value">
+                        <a href="cart.html">
+                            <ion-icon name="bag-handle-outline"></ion-icon><span> 0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- <a class="cart-value" href="cart.html"><img src="images/cart.png" width="30px" height="30px"><span>0</span></a> -->
+            <!-- <span class="cart-value" href="cart.html"><img src="images/cart.png" width="30px" height="30px" <small>0</small></span> -->
+        </div>
+    </div>
+     
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>Default Sorting</option>
+                <option>Sort by Price</option>
+                <option>Sort by Popularity</option>
+                <option>Sort by Rating</option>
+                <option>Sort by Sale</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <a href="product-details.html"><img src="images/product-1.jpg"></a>
+                <h4 style="color:darkred;font-size: medium;">Red Printed T-Shirt</h4>
+                <div class="ratings">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                    <p>Red T-shirt for men
+                        Brand logo printed
+                        Regular length
+                        Round neck
+                        Short, regular sleeves
+                        Knitted polyester fabric
+                        Engineered with Rapid-Dry & Antimicrobial technology.</p>
+                    <a href="" class="btn" onclick="return false" id="cart">Add to Cart</a>
+                </div>
+                <p>$35.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg" id="product_2">
+                <h4 style="color:darkred;font-size: medium;">Runner Shoes</h4>
+                <div class="ratings">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <p>The HRX Men's Running Shoes from the Front Runner Collection offer a stable base and flexible support for Running.Cushion collar provides ankle support.</p>
+                    
+                    <br>
+                    
+                    <a href="" class="btn" onclick="return false" id="cart">Add to Cart</a>
+                </div>
+                <p>$45.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg">
+                <h4 style="color:darkred;font-size: medium;">Track Pants</h4>
+                <div class="ratings">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                    <p>Black and grey regular track pants<br>
+                        Striped
+                        2 pockets
+                        Drawstring closure<br>
+                        Regular length
+                    <br>
+                    <br>
+                    
+                    </p>
+                    <a href="" class="btn" onclick="return false" id="cart">Add to Cart</a>
+                </div>
+                <p>$30.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg">
+                <h4 style="color:darkred;font-size: medium;">Blue Printed T-Shirt</h4>
+                <div class="ratings">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                    <p>Blue T-shirt for men
+                        Brand logo printed
+                        Regular length
+                        Round neck
+                        Short, regular sleeves
+                        Knitted polyester fabric
+                        Engineered with Rapid-Dry & Antimicrobial technology.</p>
+                    <a href="" class="btn"onclick="return false" id="cart">Add to Cart</a>
+                </div>
+                <p>$35.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-5.jpg">
+                <h4 style="color:darkred;font-size: medium;">Outdoor Shoes</h4>
+                <div class="ratings">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                    <p>Detail styling has a lace-up closure
+                        Mesh upper
+                        Cushioned footbed
+                        Non-Marking outsole
+                        The comfort collar offers a plush feel and support, helping you get in and out of the shoe with ease when you're on the go.</p>
+                    <a href="" class="btn" onclick="return false" id="cart">Add to Cart</a>
+                </div>
+                <p>$60.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-6.jpg">
+                <h4 style="color:darkred;font-size: medium;">Black Printed T-Shirt</h4>
+                <div class="ratings">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                    <br>
+                    <p>Black T-shirt for men
+                        Brand logo printed
+                        Regular length
+                        Round neck
+                        Short, regular sleeves
+                        Knitted polyester fabric
+                        Engineered with<br>Rapid-Dry & Antimicrobial technology.</p>
+                    
+                    <a href="" class="btn" onclick="return false" id="cart">Add to Cart</a>
+                </div>
+                <p>$35.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-7.jpg">
+                <h4 style="color:darkred;font-size: medium;">Combo of Socks</h4>
+                <div class="ratings">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                    <p>The HRX Men's Running & Gym Socks are great for any type of workout. With zonal cushioning, your feet get the supportive fit they need to match all your workout needs. Available in a pack of three.
+                    </p>
+                    <a href="" class="btn"onclick="return false" id="cart">Add to Cart</a>
+                </div>
+                <p>$15.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-8.jpg">
+                <h4 style="color:darkred;font-size: medium;">Fossil Watch</h4>
+                <div class="ratings">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                    <p>Display: Analogue
+                        Movement: Quartz
+                        Dial style: Textured round metal dial
+                        Features: Reset Time
+                        Strap style: Black regular, leather strap with a tang closure
+                        Water resistance: 50 m
+                        Warranty: 2 years</p>
+                    <a href="" class ="btn"onclick="return false" id="cart">Add to Cart</a>
+                </div>
+                <p>$45.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-9.jpg">
+                <h4 style="color:darkred;font-size: medium;">Roasdster Watch</h4>
+                <div class="ratings">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                    <p>  Display: Analogue
+                        Dial style: Black solid square stainless steel dial
+                        Strap Style: Black, regular, synthetic strap with a tang
+                        Water resistance: 30 m</p>
+                    <a href="" class="btn" onclick="return false" id="cart">Add to Cart</a>
+                </div>
+                <p>$20.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg">
+                <h4 style="color:darkred;font-size: medium;">X Shoes</h4>
+                <div class="ratings">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                    <p>A pair of black and orange sports shoes, has regular styling, lace-ups detail
+                        Mesh upper
+                        Cushioned footbed
+                        Textured and patterned outsole</p>
+                    <a href="" class="btn" onclick="return false" id="cart">Add to Cart</a>
+                </div>
+                <p>$80.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.jpg">
+                <h4 style="color:darkred;font-size: medium;">Walking Shoes</h4>
+                <div class="ratings">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                    <p>A pair of black shoes, has high-top Styling, slip-on detail
+                        Upper Mesh High Cushioned footbed
+                        Soft Surface
+                        Textured and patterned outsole</p>
+                    <a href="" class="btn" onclick="return false" id="cart">Add to Cart</a>
+                </div>
+                <p>$30.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.jpg">
+                <h4 style="color:darkred;font-size: medium;">Jogger Pants</h4>
+                <div class="ratings">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                    <p>Black solid with brand logo printed detail joggers, has an elasticated waisbtand with drawstring fastening, 3 pockets and cuffed hem</p>
+                    <a href="" class="btn" onclick="return false" id="cart">Add to Cart</a>
+                </div>
+                <p>$40.00</p>
+            </div>
+        </div>
+
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div class="footer">
+        <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Career</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+        INFERNO Copyright © 2021 Inferno - All rights reserved ||
+        </div>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+    </body>
+</html>
